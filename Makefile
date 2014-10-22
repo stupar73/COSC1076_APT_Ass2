@@ -32,7 +32,7 @@ clean:
 archive:
 	zip $(USER) vm_main.c vm_menu.h vm_menu.c vm_options.h vm_options.c \
 	vm_list.h vm_list.c vm_coins.h vm_coins.c vm_utility.h vm_utility.c \
-    Makefile readme.txt
+	Makefile readme.txt
 
 %.o: %.c $(DEP)
 	$(CC) $(CFLAGS) -c $< -o $@
